@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="500.0" style="-fx-background-image: url(&quot;file:///F:/New%20folder%20(2)/Dairy%20Management%20System/src/routineCustomer/371177-blurry-background-2560x1440-for-hd-1080p.jpg&quot;);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="routineCustomer.RoutineCustomerViewController">
+   <children>
+      <AnchorPane minHeight="500.0" minWidth="500.0" style="-fx-background-image: url(&quot;file:///E:/Real%20Java%20Workspace/Dairy%20Management%20System/src/routineCustomer/371177-blurry-background-2560x1440-for-hd-1080p.jpg&quot;);">
+         <children>
+            <Separator layoutY="62.0" prefHeight="1.0" prefWidth="500.0" />
+            <ImageView fitHeight="95.0" fitWidth="98.0" layoutX="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@if_edit_group_6018.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="95.0" fitWidth="81.0" layoutX="412.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@if_user%203_6710.png" />
+               </image>
+            </ImageView>
+            <Button blendMode="EXCLUSION" layoutX="101.0" layoutY="442.0" mnemonicParsing="false" onAction="#doDelete" pickOnBounds="false" prefHeight="36.0" prefWidth="118.0" style="-fx-cursor: hand;" text="Delete Others">
+               <font>
+                  <Font name="Symbol" size="15.0" />
+               </font>
+            </Button>
+            <ListView fx:id="listName" layoutX="21.0" layoutY="179.0" onMouseClicked="#doDelete1" prefHeight="250.0" prefWidth="131.0" />
+            <ListView fx:id="listAddress" layoutX="166.0" layoutY="179.0" prefHeight="250.0" prefWidth="131.0" />
+            <Label alignment="CENTER" layoutX="28.0" layoutY="153.0" prefHeight="27.0" prefWidth="118.0" text="Customer Name">
+               <font>
+                  <Font name="Gabriola" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="199.0" layoutY="153.0" prefHeight="27.0" prefWidth="66.0" text="Address">
+               <font>
+                  <Font name="Gabriola" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="328.0" layoutY="120.0" prefHeight="31.0" prefWidth="139.0" text="Default Quantity" underline="true">
+               <font>
+                  <Font name="Gabriola" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="343.0" layoutY="276.0" prefHeight="31.0" prefWidth="109.0" text="Fill Variation" underline="true">
+               <font>
+                  <Font name="Gabriola" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="334.0" layoutY="155.0" text="Cow">
+               <font>
+                  <Font name="HP Simplified Light" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="402.0" layoutY="155.0" text="Buffalo">
+               <font>
+                  <Font name="HP Simplified Light" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="313.0" layoutY="225.0" text="Mobile">
+               <font>
+                  <Font name="HP Simplified Light" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtMobile" editable="false" layoutX="381.0" layoutY="226.0" prefHeight="25.0" prefWidth="101.0" />
+            <TextField fx:id="txtDefaultCQ" editable="false" layoutX="331.0" layoutY="181.0" prefHeight="25.0" prefWidth="47.0" />
+            <TextField fx:id="txtDefaultBQ" editable="false" layoutX="410.0" layoutY="181.0" prefHeight="25.0" prefWidth="47.0" />
+            <Label layoutX="338.0" layoutY="314.0" text="Cow">
+               <font>
+                  <Font name="HP Simplified Light" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="406.0" layoutY="313.0" text="Buffalo">
+               <font>
+                  <Font name="HP Simplified Light" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtVariationCQ" layoutX="334.0" layoutY="340.0" prefHeight="25.0" prefWidth="47.0" />
+            <TextField fx:id="txtVariationBQ" layoutX="415.0" layoutY="340.0" prefHeight="25.0" prefWidth="47.0" />
+            <CheckBox fx:id="checkSkipped" blendMode="MULTIPLY" layoutX="357.0" layoutY="381.0" mnemonicParsing="false" pickOnBounds="false" style="-fx-cursor: hand;" text="Skipped">
+               <font>
+                  <Font name="HP Simplified Light" size="16.0" />
+               </font>
+            </CheckBox>
+            <Button alignment="CENTER" blendMode="EXCLUSION" layoutX="353.0" layoutY="428.0" mnemonicParsing="false" onAction="#doInsert" pickOnBounds="false" prefHeight="36.0" prefWidth="95.0" style="-fx-cursor: hand;" text="Insert">
+               <font>
+                  <Font name="Symbol" size="15.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" blendMode="EXCLUSION" layoutX="122.0" layoutY="72.0" mnemonicParsing="false" onAction="#doNew" pickOnBounds="false" prefHeight="36.0" prefWidth="66.0" style="-fx-cursor: hand;" text="New">
+               <font>
+                  <Font name="Symbol" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblInsert" alignment="CENTER" layoutX="362.0" layoutY="465.0" prefHeight="27.0" prefWidth="81.0" text="Inserted..." visible="false">
+               <font>
+                  <Font name="Gabriola" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnClose" alignment="CENTER" blendMode="EXCLUSION" layoutX="350.0" layoutY="72.0" mnemonicParsing="false" onAction="#doClose" pickOnBounds="false" prefHeight="36.0" prefWidth="66.0" style="-fx-cursor: hand;" text="Close">
+               <font>
+                  <Font name="Symbol" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="60.0" fitWidth="347.0" layoutX="88.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cooltext292115279888678.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="297.0" layoutY="250.0" prefHeight="22.0" prefWidth="201.0" />
+            <TextField fx:id="txtID" layoutX="121.0" layoutY="120.0" prefHeight="25.0" prefWidth="101.0" />
+            <Label alignment="CENTER" layoutX="21.0" layoutY="119.0" prefHeight="27.0" prefWidth="95.0" text="Milkman ID">
+               <font>
+                  <Font name="Gabriola" size="22.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" blendMode="EXCLUSION" layoutX="238.0" layoutY="115.0" mnemonicParsing="false" onAction="#doFetch" pickOnBounds="false" prefHeight="36.0" prefWidth="66.0" style="-fx-cursor: hand;" text="Fetch">
+               <font>
+                  <Font name="Symbol" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
